@@ -60,6 +60,9 @@ class Exchange_Data_ASX(Exchange_Data):
     def update_db_by_symbol(self,dataframe,symbol):
         self.arctic.update_collection(dataframe=dataframe,symbol=symbol)
 
+    def get_symbol_version(self,symbol):
+        self.arctic.get_symbol_version(symbol=symbol)
+
 
 
 

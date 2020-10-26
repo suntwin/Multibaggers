@@ -22,6 +22,12 @@ class arcticDB():
         df=self.library.read(symbol).data
         return(df)
 
+    def get_symbol_version(self,symbol):
+        return(self.library.read_metadata("14D"))
+        #return(self.library.list_versions(symbol))
+
+
+
     def create_collection(self):
         #no need for this method, as initialization is enough
         pass

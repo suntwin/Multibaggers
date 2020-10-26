@@ -33,3 +33,4 @@ ex = Exchange_Data_ASX(arctic_db)
 #read_df = lib_asx.read('GBX',as_of=4).data
 read_df = ex.read_price_by_symbol("14D")
 print(read_df)
+print(ex.get_symbol_version("14D"))
