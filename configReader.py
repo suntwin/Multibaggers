@@ -1,5 +1,6 @@
 import config as cfg
-class configReader:
+from iConfig_Reader import iConfig_Reader
+class configReader(iConfig_Reader):
 
     @staticmethod
     def get_setting(name):

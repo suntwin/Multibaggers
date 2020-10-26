@@ -20,3 +20,7 @@ class csvUtilities:
                     #merged_df = pd.concat(frames)
                     df.to_csv(file_path,mode='a',header=False,index=False)
 
+    @staticmethod
+    def read_csv_file(filepath):
+        pass
+

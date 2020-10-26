@@ -1,6 +1,6 @@
 import config_asx as cfg
-from iConfig_Reader import iConfig_Reader
-class configReader_ASX(iConfig_Reader):
+from configReader import configReader
+class configReader_ASX(configReader):
 
     @staticmethod
     def get_setting(name):
